@@ -1,0 +1,13 @@
+@use 'src/styles/utils' as *;
+
+header {
+    height: 100px;
+    background-color: #D5D5D5;
+    display: flex;
+    justify-content: center;
+
+    img {
+        width: 80px;
+    }
+
+}

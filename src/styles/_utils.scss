@@ -1,0 +1,38 @@
+/* Fonts */
+$roboto: 'Roboto', sans-serif;
+$nunito: 'Nunito', sans-serif;
+
+/* Colors*/
+$color-navy: #091353;
+$color-purple: #9D84B7;
+$color-gray: #D5D5D5;
+$color-space: #B2F9FC;
+
+/* Sizes */
+$size-sm: 0.875rem; // 14px
+$size-base: 1rem; // $base-size
+$size-md: 1.125rem; // 18px
+$size-lg: 1.25rem; // 20px
+$size-xl: 1.375rem; // 22px
+$size-2xl: 1.5rem; // 24px
+$size-3xl: 1.75rem; // 28px
+$size-4xl: 1.875rem; // 30px
+$size-5xl: 2.25rem; // 36px
+
+/* Media Queries */
+$breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 1024px,
+    xl: 1280px,
+);
+
+@mixin media($media) {
+    @if map-has-key($breakpoints, $media) {
+        @media screen and (min-width: map-get($breakpoints, $media)) {
+            @content;
+        }
+    }   @else {
+        @error 'Los valores permitidos son: sm, md, lg, xl';
+    }
+}

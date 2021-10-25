@@ -1,0 +1,23 @@
+@use 'utils' as *;
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+html {
+    tab-size: 4;
+    -o-tab-size: 4;
+    -moz-tab-size: 4;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    line-height: inherit;
+    background-image: url("../assets/background\ .jpg");
+    -webkit-tap-highlight-color: transparent;
+}
