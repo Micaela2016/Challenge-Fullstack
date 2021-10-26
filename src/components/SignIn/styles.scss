@@ -1,0 +1,55 @@
+@import 'src/styles/utils';
+
+.contSignIn {
+    width: 50%;
+    font-family: $nunito;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__form {
+        position: relative;
+        max-width: 20rem;
+        background-color: $color-purple;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 2rem auto;
+        padding: 1rem 2.5rem;
+        box-sizing: border-box;
+        border-radius: $rounded-secondary;
+
+        &-title {
+            color: $color-navy;
+            margin: 5px;
+        }
+
+        p {
+            color: $color-gray;
+            font-style: normal;
+            font-weight: 200;
+            font-size: $size-2xl;
+            margin: 5px;
+        }
+
+        label{
+            font-weight: normal;
+            color: $color-navy;
+            font-size: 18px;
+            line-height: 33px;
+            width: 100%;
+            font-weight: 300;
+    
+
+            input {
+                width: 100%;
+                padding: .4em .5em;
+                background-color: $color-gray;
+                border: 1px solid $color-gray;
+                border-radius: .2em;
+            }
+            }
+        }
+    }
