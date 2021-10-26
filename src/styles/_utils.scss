@@ -27,6 +27,12 @@ $breakpoints: (
     xl: 1280px,
 );
 
+/* Rounded*/
+$rounded-primary : 50px;
+$rounded-secondary : 25px;
+
+
+
 @mixin media($media) {
     @if map-has-key($breakpoints, $media) {
         @media screen and (min-width: map-get($breakpoints, $media)) {

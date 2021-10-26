@@ -1,9 +1,11 @@
-@use 'utils' as *;
+@import 'src/styles/utils';
 
 *,
 ::after,
 ::before {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -15,9 +17,8 @@ html {
 }
 
 body {
-    margin: 0;
     min-height: 100vh;
     line-height: inherit;
-    background-image: url("../assets/background\ .jpg");
+    background-color: $color-space;
     -webkit-tap-highlight-color: transparent;
 }
